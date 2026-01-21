@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Face Recognition Attendance</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/face-api.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Face Recognition Attendance System</h1>
+
+  <video id="video" width="720" height="560" autoplay muted></video>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Enter Name">
+    <button onclick="markAttendance()">Mark Attendance</button>
+    <button onclick="downloadCSV()">Download CSV</button>
+  </div>
+
+  <table id="attendance">
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  </table>
+</body>
+</html>
